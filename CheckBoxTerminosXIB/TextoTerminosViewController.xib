@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextoTerminosViewController" customModule="CheckBoxTerminosXIB" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eee-hp-cUf">
+                    <rect key="frame" x="15" y="79" width="363" height="729"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vHD-lB-N75">
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="2099"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axx-9r-fxs">
+                                    <rect key="frame" x="0.0" y="0.0" width="363" height="2029"/>
+                                    <mutableString key="text">¡Hola! Gracias por utilizar nuestra aplicación móvil de compras. Para garantizar una experiencia segura y justa para todos los usuarios, es importante que leas y comprendas los siguientes términos y condiciones:
+
+Aceptación de los términos: Al utilizar nuestra aplicación móvil de compras, aceptas estos términos y condiciones en su totalidad. Si no estás de acuerdo con alguno de los términos, no podrás utilizar la aplicación.
+
+Contenido de la aplicación: Todo el contenido disponible en la aplicación, incluyendo texto, imágenes, videos y otros materiales, son propiedad de nuestra empresa o de nuestros proveedores y están protegidos por las leyes de propiedad intelectual. No está permitido descargar, copiar, reproducir o distribuir el contenido de la aplicación sin nuestro consentimiento expreso por escrito.
+
+Uso de la aplicación: La aplicación solo debe utilizarse para fines legales y éticos. No está permitido utilizar la aplicación para actividades ilegales o inmorales. También es responsabilidad del usuario asegurarse de que su dispositivo móvil y conexión a Internet sean seguros y estén protegidos contra virus, malware y otras amenazas.
+
+Registro: Al registrarte en la aplicación, proporcionas información personal como tu nombre, dirección, número de teléfono y dirección de correo electrónico. Esta información debe ser precisa y actualizada en todo momento. Nos reservamos el derecho de suspender o cancelar tu cuenta si detectamos que has proporcionado información falsa o engañosa.
+
+Compras: Al utilizar nuestra aplicación para realizar compras, aceptas los términos y condiciones de pago y entrega establecidos por los vendedores y proveedores de servicios. Nosotros no somos responsables de los productos o servicios que se ofrecen en la aplicación, ni de los problemas que puedan surgir durante el proceso de compra.
+
+Responsabilidad: Nosotros no seremos responsables por cualquier daño, pérdida o perjuicio derivado del uso de la aplicación o de los servicios proporcionados por terceros a través de la aplicación. La responsabilidad recae exclusivamente en el usuario.
+
+Modificaciones: Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento y sin previo aviso. Cualquier cambio será efectivo inmediatamente después de su publicación en la aplicación.
+
+Ley aplicable: Estos términos y condiciones se regirán e interpretarán de acuerdo con las leyes del país en el que nuestra empresa está registrada.
+
+Si tienes alguna pregunta o comentario sobre estos términos y condiciones, no dudes en ponerte en contacto con nosotros a través de la sección de ayuda de la aplicación. Gracias por utilizar nuestra aplicación de compras y esperamos que disfrutes de tu experiencia de compra.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ro9-ZC-fKw">
+                                    <rect key="frame" x="0.0" y="2039" width="363" height="60"/>
+                                    <color key="backgroundColor" red="0.2117646933" green="0.2352941036" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="P7H-Kv-P24"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Aceptar"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="aceptarTerminosAction:" destination="-1" eventType="touchUpInside" id="q66-O3-Zdn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="vHD-lB-N75" firstAttribute="leading" secondItem="QBx-Ag-1EF" secondAttribute="leading" id="JxO-FY-vpZ"/>
+                        <constraint firstItem="vHD-lB-N75" firstAttribute="top" secondItem="QBx-Ag-1EF" secondAttribute="top" id="Q7f-J5-Niz"/>
+                        <constraint firstItem="vHD-lB-N75" firstAttribute="width" secondItem="lrm-ee-MaQ" secondAttribute="width" id="luw-NT-hfd"/>
+                        <constraint firstItem="vHD-lB-N75" firstAttribute="bottom" secondItem="QBx-Ag-1EF" secondAttribute="bottom" id="q5e-8W-Rzj"/>
+                        <constraint firstItem="vHD-lB-N75" firstAttribute="trailing" secondItem="QBx-Ag-1EF" secondAttribute="trailing" id="ver-Gm-8vH"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="QBx-Ag-1EF"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="lrm-ee-MaQ"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Eee-hp-cUf" secondAttribute="bottom" constant="10" id="Ita-3J-gQ5"/>
+                <constraint firstAttribute="trailing" secondItem="Eee-hp-cUf" secondAttribute="trailing" constant="15" id="Nac-SB-VEJ"/>
+                <constraint firstItem="Eee-hp-cUf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="w34-vg-Ow9"/>
+                <constraint firstItem="Eee-hp-cUf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="y9f-NG-Bbr"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

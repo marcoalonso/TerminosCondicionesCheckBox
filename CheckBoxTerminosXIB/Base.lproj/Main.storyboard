@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="CheckBoxTerminosXIB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lpG-gA-GFo">
+                                <rect key="frame" x="10" y="59" width="373" height="749"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSr-zy-u8I">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="257"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a mi App, para continuar por favor acepta nuestros &quot;terminos y condiciones&quot; " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6g-Iq-OCV">
+                                                <rect key="frame" x="50" y="68.666666666666657" width="273" height="119.66666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="z6g-Iq-OCV" secondAttribute="trailing" constant="50" id="Rny-3d-LkE"/>
+                                            <constraint firstItem="z6g-Iq-OCV" firstAttribute="centerX" secondItem="iSr-zy-u8I" secondAttribute="centerX" id="Xuz-n4-tVN"/>
+                                            <constraint firstItem="z6g-Iq-OCV" firstAttribute="leading" secondItem="iSr-zy-u8I" secondAttribute="leading" constant="50" id="aZ5-bc-U0c"/>
+                                            <constraint firstItem="z6g-Iq-OCV" firstAttribute="centerY" secondItem="iSr-zy-u8I" secondAttribute="centerY" id="kIl-5v-cxQ"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="60A-rM-qQk">
+                                        <rect key="frame" x="0.0" y="267" width="373" height="372"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="372" id="BXu-En-uwC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Inr-fm-2JI" customClass="TerminosCondiciones" customModule="CheckBoxTerminosXIB" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="649" width="373" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="JnK-K1-pkZ"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sVD-bL-jjc">
+                                        <rect key="frame" x="0.0" y="689" width="373" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax4-qj-4Gc">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="SXl-BE-KPN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="tintColor" red="0.2117646933" green="0.2352941036" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Aceptar"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.2117646933" green="0.2352941036" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="AceptarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyw-n8-8UF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lpG-gA-GFo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="69h-Lt-dZc"/>
+                            <constraint firstAttribute="trailing" secondItem="lpG-gA-GFo" secondAttribute="trailing" constant="10" id="TDO-JR-CcV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lpG-gA-GFo" secondAttribute="bottom" constant="10" id="Xsz-O9-5FY"/>
+                            <constraint firstItem="lpG-gA-GFo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="bkF-No-XWF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aceptarButton" destination="ax4-qj-4Gc" id="KaT-IA-mEZ"/>
+                        <outlet property="termsConditionsView" destination="Inr-fm-2JI" id="y5R-Qy-vGv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="zZt-H0-eoK">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" id="LD5-wA-ged" customClass="WelcomeViewController" customModule="CheckBoxTerminosXIB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QpX-gU-kZM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="k63-d2-smK">
+                                <rect key="frame" x="10" y="129" width="373" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Kuo-Y0-9Ih"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z4-I6-s5P">
+                                <rect key="frame" x="10" y="69" width="373" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oBU-HN-5zs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FSk-Ks-VoO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8z4-I6-s5P" firstAttribute="top" secondItem="FSk-Ks-VoO" secondAttribute="top" constant="10" id="FCr-7i-Bhf"/>
+                            <constraint firstItem="FSk-Ks-VoO" firstAttribute="trailing" secondItem="k63-d2-smK" secondAttribute="trailing" constant="10" id="FpB-yT-gmQ"/>
+                            <constraint firstItem="FSk-Ks-VoO" firstAttribute="trailing" secondItem="8z4-I6-s5P" secondAttribute="trailing" constant="10" id="ILe-fF-EkE"/>
+                            <constraint firstItem="k63-d2-smK" firstAttribute="leading" secondItem="FSk-Ks-VoO" secondAttribute="leading" constant="10" id="JQv-6I-GMO"/>
+                            <constraint firstItem="8z4-I6-s5P" firstAttribute="leading" secondItem="FSk-Ks-VoO" secondAttribute="leading" constant="10" id="WEv-uU-Lnb"/>
+                            <constraint firstItem="k63-d2-smK" firstAttribute="top" secondItem="8z4-I6-s5P" secondAttribute="bottom" constant="10" id="gpS-bF-FIv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buR-Ff-Odj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="-35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="614" height="596"/>
+        <image name="welcome" width="608" height="601"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
