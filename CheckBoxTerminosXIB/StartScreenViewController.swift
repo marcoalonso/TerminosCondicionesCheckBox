@@ -10,6 +10,7 @@ import UIKit
 class StartScreenViewController: UIViewController {
     
     var acceptedTermsConditions: Bool = false
+    var firstTimeToShow: Bool = false
     
     @IBOutlet weak var aceptarButton: UIButton!
     @IBOutlet weak var termsConditionsView: TerminosCondiciones!
@@ -39,10 +40,17 @@ class StartScreenViewController: UIViewController {
     }
     
     @objc func seeTextTerms() {
+       
         presentTextTermsAndConditions()
     }
     
     @objc func userAcceptedTerms() {
+        //Si es la primera vez, muestra el Texto, si no, solo deshabilita el boton.
+        if !firstTimeToShow {
+            presentTextTermsAndConditions()
+            firstTimeToShow = true
+        }
+        
         aceptarButton.isUserInteractionEnabled = true
         aceptarButton.isHidden = false
     }
