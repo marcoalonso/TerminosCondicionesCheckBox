@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C15CC8E29CE1B4B003F51B8 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15CC8D29CE1B4B003F51B8 /* SettingsScreen.swift */; };
 		6C74CD4629C506FB00789813 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C74CD4529C506FB00789813 /* WelcomeViewController.swift */; };
 		6C74CD4D29C50C1A00789813 /* TextoTerminosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C74CD4B29C50C1A00789813 /* TextoTerminosViewController.swift */; };
 		6C74CD4E29C50C1A00789813 /* TextoTerminosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C74CD4C29C50C1A00789813 /* TextoTerminosViewController.xib */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C15CC8D29CE1B4B003F51B8 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		6C74CD4529C506FB00789813 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		6C74CD4B29C50C1A00789813 /* TextoTerminosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextoTerminosViewController.swift; sourceTree = "<group>"; };
 		6C74CD4C29C50C1A00789813 /* TextoTerminosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextoTerminosViewController.xib; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				6C74CD4529C506FB00789813 /* WelcomeViewController.swift */,
 				6C74CD4B29C50C1A00789813 /* TextoTerminosViewController.swift */,
 				6C74CD4C29C50C1A00789813 /* TextoTerminosViewController.xib */,
+				6C15CC8D29CE1B4B003F51B8 /* SettingsScreen.swift */,
 			);
 			path = CheckBoxTerminosXIB;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				6C74CD4D29C50C1A00789813 /* TextoTerminosViewController.swift in Sources */,
 				6CAC95D829C4DE5E00DE3C4A /* StartScreenViewController.swift in Sources */,
+				6C15CC8E29CE1B4B003F51B8 /* SettingsScreen.swift in Sources */,
 				6CAC95D429C4DE5E00DE3C4A /* AppDelegate.swift in Sources */,
 				6CAC95F229C4E6AD00DE3C4A /* Extension+UIView.swift in Sources */,
 				6C74CD4629C506FB00789813 /* WelcomeViewController.swift in Sources */,

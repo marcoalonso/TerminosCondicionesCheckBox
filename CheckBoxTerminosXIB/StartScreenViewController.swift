@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class StartScreenViewController: UIViewController {
     
@@ -67,6 +68,14 @@ class StartScreenViewController: UIViewController {
     func presentTextTermsAndConditions(){
         let vc = TextoTerminosViewController(nibName: "TextoTerminosViewController", bundle: nil)
         self.present(vc, animated: true)
+    }
+    
+    
+    @IBAction func showSettingsButton(_ sender: UIButton) {
+        let vc = UIHostingController(rootView: SettingsScreen())
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .automatic
+        present(vc, animated: true)
     }
     
     @IBAction func AceptarAction(_ sender: UIButton) {
